@@ -9,3 +9,17 @@
 8) Consider your data model. What objects will you be using? What are the key/value pairs? What arrays do you need? What needs to live in local storage?
 9) Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.
 
+Need to Create some sort of thing where the user can input their number guess, still get 2 more chances, and then see the correct number.
+Figure out how to do a reset button as well. 
+
+HTML:
+Buttons- One to press for Guess, One to press for Reset
+Number Input
+
+State:
+The Guesses Reaminign (3-2-1-)
+The correct answr (reset will change this)
+
+Javascript:
+ON click it will be too high, too low, just right. 
+Retuen 1 (too high), 0 (just right), -1 (too low)
