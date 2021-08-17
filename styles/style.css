@@ -71,7 +71,8 @@ h2 {
 }
 
 .main-logo {
-    animation: pulse 5s infinite ease-in-out;
+    border: 5px;
+    box-shadow: var(--shadow);
 }
 
 header img {
@@ -111,3 +112,23 @@ footer {
     }
 
   }
+.numberbutton{
+    background-color: hsla(180, 86%, 51%, 0.747);
+    color:rgb(255, 255, 255) 100px;
+    border-radius: 10px;
+    cursor:pointer;
+    box-shadow:blueviolet;
+    transition: all .2s ease-in-out;
+    padding:10px;
+    margin:5px;
+}
+.resetbutton{
+    background-color: hsla(0, 55%, 54%, 0.945);
+    color:rgb(255, 255, 255) 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow:blueviolet;
+    transition: all .2s ease-in-out;
+    margin:5px;
+    padding:10px;
+}

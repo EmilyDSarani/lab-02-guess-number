@@ -1,4 +1,11 @@
 // import functions and grab DOM elements
+const userGuessEl=document.getElementById('press-guess');
+const userResetEl=document.getElementById('press-reset');
+
+
+
+
+
 
 // initialize global state
 
