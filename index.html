@@ -24,17 +24,21 @@
             <h2>
                 Step Right up and Guess the Number!
             </h2>
-            <p>
+            <ol>
                 The rules are easy peasey:
-                1. Guess the number!
-                2. Enter in what you think the number will be
-                3. You get three tries to guess the right number
-                4. At the end of the game, the correct number will appear
-                5. Never fear! You can always try again!
-            </p>
-            <input id="user-guess"/>
-            <button id="press-guess" class="numberbutton">Guess</button>
-            <button id="press-reset" class= "resetbutton">Redo</button>
+                <li> Guess the number!</li>
+                <li>Enter in what you think the number will be</li>
+                <li>You get three tries to guess the right number</li>
+                <li> At the end of the game, the correct number will appear </li>
+                <li>Never fear! You can always try again! </li>
+            </ol>
+            <p> 
+            <input id="number-input" placeholder="0"/>
+            <button id="guess-button" class="numberbutton">Guess</button>
+           <div id="results"></div>
+           <div id="guesses-remaining"></div>
+        </p>
+            
         </section>
     </main>
     <footer>

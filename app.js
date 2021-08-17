@@ -1,10 +1,30 @@
 // import functions and grab DOM elements
-const userGuessEl=document.getElementById('press-guess');
-const userResetEl=document.getElementById('press-reset');
+import { comparison } from './utils.js';
 
+const userGuessEl = document.getElementById('number-input');
+const guessButtonEl = document.getElementById('guess-button');
+const resultsEl = document.getElementById('results');
+const guessesEl = document.getElementById ('guesses-remaining');
 
+let correctNumber = Math.ceil(Math.random() * 20);
 
+let numberofGuesses = 3;
+let remains = numberofGuesses;
 
+guessButtonEl.addEventListener('click', () => {
+
+    let currentGuess = (Number(userGuessEl.value));
+    let res = comparison (currentGuess, correctNumber);
+
+    if (res === 0){
+        resultsEl.textContent = `Ding Ding Ding! Correct!`;
+    } else if (res === 1){
+        resultsEl.textContent = `Big Oof, that\'s too high my dude, you have ${remains--} guesses left`;
+    } else {
+        resultsEl.textContent = `Woooooah there, thatta there is done too low ${remains--} guesses left`;
+    }
+
+});
 
 
 // initialize global state
