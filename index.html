@@ -13,18 +13,16 @@
 </head>
 
 <body>
-    <header>
-        <div class="gutter-right logo">
-            <img src="assets/big-logo.png" />
-        </div>
+    
     </header>
     <main>
+       
         <section class="main-section">
-            <img class="main-logo" src="assets\math-numbers.gif"/>
             <h2>
                 Step Right up and Guess the Number!
             </h2>
-            <ol>
+            <img class="main-logo" src="assets\math-numbers.gif"/>
+            <ol class="rules">
                 The rules are easy peasey:
                 <li> Guess the number!</li>
                 <li>Enter in what you think the number will be</li>
@@ -32,17 +30,21 @@
                 <li> At the end of the game, the correct number will appear </li>
                 <li>Never fear! You can always try again! </li>
             </ol>
+
+            <h1 class="challenge">I'm thinking of a number between 0 and 20. Think you can guess it?</h1>
             <p> 
             <input id="number-input" placeholder="0"/>
-            <button id="guess-button" class="numberbutton">Guess</button>
-           <div id="results"></div>
-           <div id="guesses-remaining"></div>
+            <button id="guess-button" class="numberbutton">Guess the Number, my Dude</button>
+            <button id="reset" class=resetbutton>Play Again, my Dude</button>
+            <div id="results"></div>
+
         </p>
             
         </section>
     </main>
     <footer>
         <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
+        <div>Do you think you can beat the computer?</div>
     </footer>
 
     <script type="module" src="./app.js"></script>

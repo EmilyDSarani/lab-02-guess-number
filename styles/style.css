@@ -1,11 +1,11 @@
 
 body {
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-    /* --color1: hsla(349, 69%, 76%, 1);
-    --color2: hsla(207, 67%, 44%, 1);
-    --color3: hsla(200, 61%, 56%, 1);
-    --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1); */
+    --color1: rgb(0, 0, 0);
+    --color2: rgb(0, 63, 114);
+    --color3: rgb(112, 118, 121);
+    --color4: rgb(11, 216, 235);
+    --color5: rgb(169, 248, 236); */
 
     /* --color1: hsla(45, 86%, 83%, 1);
     --color2: hsla(135, 65%, 98%, 1);
@@ -71,7 +71,7 @@ h2 {
 }
 
 .main-logo {
-    border: 5px;
+    border: 20px;
     box-shadow: var(--shadow);
 }
 
@@ -113,7 +113,7 @@ footer {
 
   }
 .numberbutton{
-    background-color: hsla(180, 86%, 51%, 0.747);
+    background-color: hsla(138, 91%, 50%, 0.747);
     color:rgb(255, 255, 255) 100px;
     border-radius: 10px;
     cursor:pointer;
@@ -123,7 +123,7 @@ footer {
     margin:5px;
 }
 .resetbutton{
-    background-color: hsla(0, 55%, 54%, 0.945);
+    background-color: hsla(0, 63%, 69%, 0.945);
     color:rgb(255, 255, 255) 100px;
     border-radius: 10px;
     cursor: pointer;
@@ -131,4 +131,13 @@ footer {
     transition: all .2s ease-in-out;
     margin:5px;
     padding:10px;
+}
+.rules{
+    background-color: Gray;
+    color:white;
+    padding:20px;
+}
+.challenge{
+    background-color: black;
+    color: white;
 }

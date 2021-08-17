@@ -4,7 +4,8 @@ import { comparison } from './utils.js';
 const userGuessEl = document.getElementById('number-input');
 const guessButtonEl = document.getElementById('guess-button');
 const resultsEl = document.getElementById('results');
-const guessesEl = document.getElementById ('guesses-remaining');
+const resetEl = document.getElementById('reset');
+
 
 let correctNumber = Math.ceil(Math.random() * 20);
 
@@ -21,11 +22,14 @@ guessButtonEl.addEventListener('click', () => {
     } else if (res === 1){
         resultsEl.textContent = `Big Oof, that\'s too high my dude, you have ${remains--} guesses left`;
     } else {
-        resultsEl.textContent = `Woooooah there, thatta there is done too low ${remains--} guesses left`;
+        resultsEl.textContent = `Woooooah there my Dude, that's too low, you have ${remains--} guesses left`;
     }
 
 });
 
+resetEl.addEventListener('click',() => {
+
+})
 
 // initialize global state
 
