@@ -11,7 +11,6 @@ let correctNumber = Math.ceil(Math.random() * 20);
 console.log(correctNumber);
 
 let numberofGuesses = 3;
-let remains = numberofGuesses;
 
 guessButtonEl.addEventListener('click', () => {
 
@@ -27,6 +26,7 @@ guessButtonEl.addEventListener('click', () => {
     } 
     if (numberofGuesses === -1){
         guessButtonEl.disabled = true;
+        resultsEl.textContent = `The correct answer is ${correctNumber}`;
     }    
 });
 
