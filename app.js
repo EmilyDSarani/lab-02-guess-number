@@ -26,6 +26,7 @@ guessButtonEl.addEventListener('click', () => {
     } 
     if (numberofGuesses === -1){
         guessButtonEl.disabled = true;
+        resultsEl.textContent = `The correct number is ${correctNumber}! Replay My Dudes!`;
     }    
 });
 
