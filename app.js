@@ -30,6 +30,9 @@ guessButtonEl.addEventListener('click', () => {
     }   
 });
 
+resetEl.addEventListener('click', () => {
+  location.reload();
+});
 
 
 
