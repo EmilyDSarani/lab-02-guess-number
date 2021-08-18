@@ -6,5 +6,5 @@ export function comparison(expected, correctNumber)
     return 1;
 } else {
     return -1; 
-}
+} 
 }
