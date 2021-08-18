@@ -18,7 +18,7 @@ guessButtonEl.addEventListener('click', () => {
     let res = comparison (currentGuess, correctNumber);
 
     if (res === 0){
-        resultsEl.textContent = `Ding Ding Ding! Correct!`;
+        resultsEl.textContent = `Ding Ding Ding! Correct! Good Job, My Dudes. Play Again!`;
     } else if (res === 1){
         resultsEl.textContent = `Big Oof, that\'s too high my dude, you have ${numberofGuesses--} guesses left`;
     } else {
