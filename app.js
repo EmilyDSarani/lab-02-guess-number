@@ -4,7 +4,7 @@ import { comparison } from './utils.js';
 const userGuessEl = document.getElementById('number-input');
 const guessButtonEl = document.getElementById('guess-button');
 const resultsEl = document.getElementById('results');
-
+const resetEl = document.getElementById('reset');
 
 
 let correctNumber = Math.ceil(Math.random() * 20);
@@ -27,8 +27,10 @@ guessButtonEl.addEventListener('click', () => {
     if (numberofGuesses === -1){
         guessButtonEl.disabled = true;
         resultsEl.textContent = `The correct answer is ${correctNumber}`;
-    }    
+    }   
 });
+
+
 
 
 
