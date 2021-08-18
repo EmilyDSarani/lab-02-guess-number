@@ -28,8 +28,11 @@ guessButtonEl.addEventListener('click', () => {
         guessButtonEl.disabled = true;
     }    
 });
+
 resetEl.addEventListener('click', () => {
-  location.reload();
+    location.reload();
+
+  
 });
 
 
