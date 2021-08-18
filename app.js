@@ -4,14 +4,13 @@ import { comparison } from './utils.js';
 const userGuessEl = document.getElementById('number-input');
 const guessButtonEl = document.getElementById('guess-button');
 const resultsEl = document.getElementById('results');
-
+const resetEl = document.getElementById ('reset');
 
 
 let correctNumber = Math.ceil(Math.random() * 20);
 console.log(correctNumber);
 
 let numberofGuesses = 3;
-let remains = numberofGuesses;
 
 guessButtonEl.addEventListener('click', () => {
 
@@ -28,6 +27,9 @@ guessButtonEl.addEventListener('click', () => {
     if (numberofGuesses === -1){
         guessButtonEl.disabled = true;
     }    
+});
+resetEl.addEventListener('click', () => {
+  location.reload();
 });
 
 
